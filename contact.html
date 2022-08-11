@@ -14,70 +14,80 @@
 
 <body class="position-relative">
     <div class="line-main">
-        <div class="container p-0 m-0 row m-auto h-100">
-            <div class="col-4">
+        <div class="container line-container p-0 m-0 row m-auto h-100">
+            <div class="col-4 line">
+            </div>
+            <div class="col-4 line-right">
                 <div class="line"></div>
             </div>
-            <div class="col-4">
-                <div class="line"></div>
-            </div>
-
-            <div class="col-4">
-                <div class="line"></div>
-                <div class="line line-right"></div>
+            <div class="col-4 line-right">
             </div>
         </div>
     </div>
-    <header class="header header-contact position-relative">
-        <div class="header-phone d-none d-sm-block">+7 (212) 674-25-10</div>
+    <!-- === Header === -->
+    <header class="d-flex flex-column position-relative ">
+
+        <!-- === Nav === -->
         <nav class="navbar navbar-expand-lg position-relative z-100 p-0">
-            <div class="container container-sm-meno">
+            <div class="container container-sm-meno navbar-container">
                 <button class="nav-buttom-res navbar-toggler float-right" data-target="#nav" data-toggle="collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <a href="index.html" class="logo logo-glass animated pulse" data-wow-delay="3s">
+                ویلا<span class="color-main">.</span>فردا
+            </a>
                 <div class="navbar-collapse collapse" id="nav">
-                    <ul class="navbar-nav bg-lg-dark">
-                        <li class="fs-12 nav-item"><a href="index.html" class="nav-link d-block text-white">HOME</a>
+                    <ul class="navbar-nav bg-lg-dark" dir="rtl">
+                        <li class="fs-12 nav-item"><a href="index.html" class="nav-link d-block text-white action action-res">صفحه نخست</a></li>
+                        <li class="fs-12 nav-item"><a href="project-details.html" class="nav-link text-white">اجاره
+                            ویلا</a></li>
+                        <li class="fs-12 nav-item"><a href="about.html" class="nav-link d-block text-white">درباره
+                            ما</a></li>
+                        <li class="fs-12 nav-item"><a href="blog.html" class="nav-link d-block text-white">وبلاگ</a>
                         </li>
-                        <li class="fs-12 nav-item"><a href="about.html" class="nav-link d-block text-white">ABOUT US</a>
-                        </li>
-                        <li class="fs-12 nav-item"><a href="project-details.html"
-                                class="nav-link text-white">PROJECTS</a></li>
-                        <li class="fs-12 nav-item"><a href="blog.html" class="nav-link d-block text-white">BLOG</a></li>
-                        <li class="fs-12 nav-item mr-3"><a href="contact.html"
-                                class="nav-link d-block text-white action action-res">CONTACT</a></li>
+                        <li class="fs-12 nav-item "><a href="contact.html" class="nav-link d-block text-white">تماس با
+                            ما</a></li>
                     </ul>
                 </div>
+                <div class="header-phone d-none d-lg-block"><a href="tell:09381416784">09381416784</a></div>
             </div>
         </nav>
+        <!-- === Social Media === -->
+        <div class="line-dark">
+            <div class="vertical-panel-content d-flex flex-column-reverse ">
+                <ul>
+                    <li class="mb-5 wow animated fadeInLeft" data-wow-delay=".8s"><a href="#" class="fs"><i
+                            class="fab fa-instagram"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1s"><a href="#" class="fs"><i
+                            class="fab fa-twitter"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1.2s"><a href="#" class="fs"><i
+                            class="fab fa-facebook"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1.4s"><a href="#" class="fs"><i
+                            class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- === Logo ===  -->
         <div class="logo-box">
-            <a href="index.html">
-                go<span class="color-main">.</span>arch
-            </a>
-            <div class="brand-name">go.arch</div>
+            <a href="index.html" class="logo wow animated pulse" data-wow-delay="3s">
+            ویلا<span class="color-main">.</span>فردا
+        </a>
+            <div class="brand-name">VILLA</div>
         </div>
-        <div class="vertical-panel-content d-flex flex-column-reverse icon-panel-order">
-            <ul>
-                <li class="mb-5"><a href="#" class="fs"><i class="fab fa-instagram"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-twitter"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-facebook"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-youtube"></i></a></li>
-            </ul>
-        </div>
+
+    </header>
+    <div class="about-container header-contact">
         <div class="container text-right">
             <div class="title-header">
                 <h1 class="">contact</h1>
             </div>
         </div>
-
-    </header>
-    <main>
+    </div>
+    <main id="mt-100vh">
         <section>
             <div class="bg-contact row">
                 <div class="col-lg-7">
-                    <iframe
-                        src="https://www.google.com/maps"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="col-lg-5">
                     <div class="contact-info-content">
@@ -111,8 +121,7 @@
                 </div>
             </div>
         </section>
-        <section
-            class="contact position-relative d-flex flex-column justify-content-around h-lg-85 z-100 overflow-hidden">
+        <section class="contact position-relative d-flex flex-column justify-content-around h-lg-85 z-100 overflow-hidden">
             <div class="container d-flex flex-column justify-content-around w-100 h-100 align-items-center pad-0">
                 <div>
                     <h2 class="py-6">get <span class="color-main">in touch</span></h2>
@@ -132,8 +141,7 @@
                                     <input type="text" class="form-control form-style" name="name" placeholder="Name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-style" name="email" required=""
-                                        placeholder="Email address *">
+                                    <input type="email" class="form-control form-style" name="email" required="" placeholder="Email address *">
                                 </div>
                             </div>
                             <div class="col-field col-sm-6 col-md-4">
@@ -141,27 +149,23 @@
                                     <input type="tel" class="form-control form-style" name="phone" placeholder="Phone ">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-style" name="company"
-                                        placeholder=" Company ">
+                                    <input type="text" class="form-control form-style" name="company" placeholder=" Company ">
                                 </div>
                             </div>
                             <div class="col-field col-sm-12 col-md-4">
                                 <div class="h-100 form-group">
-                                    <textarea name="message" class="form-style h-100"
-                                        placeholder=" Message*"></textarea>
+                                    <textarea name="message" class="form-style h-100" placeholder=" Message*"></textarea>
                                 </div>
                             </div>
                             <div class="col-message col-field col-sm-12">
                                 <div class="form-group">
-                                    <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you!.
-                                        Your message is successfully sent...</div>
+                                    <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you!. Your message is successfully sent...</div>
                                     <div class="error-message">We're sorry, but something went wrong</div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-submit text-right">
-                            <button type="submit" class="btn btn-shadow-2 btn-pill wow swing"
-                                style="visibility: visible; animation-name: swing;">Send <i
+                            <button type="submit" class="btn btn-shadow-2 btn-pill wow swing" style="visibility: visible; animation-name: swing;">Send <i
                                     class="icon-next"></i></button>
                         </div>
                     </form>
@@ -181,7 +185,11 @@
 
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/form-validation.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/app.js"></script>
 
 </html>

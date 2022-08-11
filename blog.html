@@ -14,60 +14,76 @@
 
 <body class="position-relative">
     <div class="line-main">
-        <div class="container p-0 m-0 row m-auto h-100">
-            <div class="col-4">
+        <div class="container line-container p-0 m-0 row m-auto h-100">
+            <div class="col-4 line">
+            </div>
+            <div class="col-4 line-right">
                 <div class="line"></div>
             </div>
-            <div class="col-4">
-                <div class="line"></div>
-            </div>
-
-            <div class="col-4">
-                <div class="line"></div>
-                <div class="line line-right"></div>
+            <div class="col-4 line-right">
             </div>
         </div>
     </div>
-    <header class="header header-blog position-relative">
-        <div class="header-phone d-none d-sm-block">+7 (212) 674-25-10</div>
+    <!-- === Header === -->
+    <header class="d-flex flex-column position-relative ">
+
+        <!-- === Nav === -->
         <nav class="navbar navbar-expand-lg position-relative z-100 p-0">
-            <div class="container container-sm-meno">
+            <div class="container container-sm-meno navbar-container">
                 <button class="nav-buttom-res navbar-toggler float-right" data-target="#nav" data-toggle="collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <a href="index.html" class="logo logo-glass animated pulse" data-wow-delay="3s">
+                ویلا<span class="color-main">.</span>فردا
+            </a>
                 <div class="navbar-collapse collapse" id="nav">
-                    <ul class="navbar-nav bg-lg-dark">
-                        <li class="fs-12 nav-item"><a href="index.html" class="nav-link d-block text-white">HOME</a></li>
-                        <li class="fs-12 nav-item"><a href="about.html" class="nav-link d-block text-white">ABOUT US</a></li>
-                        <li class="fs-12 nav-item"><a href="project-details.html" class="nav-link text-white">PROJECTS</a></li>
-                        <li class="fs-12 nav-item"><a href="blog.html" class="nav-link d-block text-white action action-res">BLOG</a></li>
-                        <li class="fs-12 nav-item mr-3"><a href="contact.html" class="nav-link d-block text-white">CONTACT</a></li>
+                    <ul class="navbar-nav bg-lg-dark" dir="rtl">
+                        <li class="fs-12 nav-item"><a href="index.html" class="nav-link d-block text-white action action-res">صفحه نخست</a></li>
+                        <li class="fs-12 nav-item"><a href="project-details.html" class="nav-link text-white">اجاره
+                            ویلا</a></li>
+                        <li class="fs-12 nav-item"><a href="about.html" class="nav-link d-block text-white">درباره
+                            ما</a></li>
+                        <li class="fs-12 nav-item"><a href="blog.html" class="nav-link d-block text-white">وبلاگ</a>
+                        </li>
+                        <li class="fs-12 nav-item "><a href="contact.html" class="nav-link d-block text-white">تماس با
+                            ما</a></li>
                     </ul>
                 </div>
+                <div class="header-phone d-none d-lg-block"><a href="tell:09381416784">09381416784</a></div>
             </div>
         </nav>
+        <!-- === Social Media === -->
+        <div class="line-dark">
+            <div class="vertical-panel-content d-flex flex-column-reverse ">
+                <ul>
+                    <li class="mb-5 wow animated fadeInLeft" data-wow-delay=".8s"><a href="#" class="fs"><i
+                            class="fab fa-instagram"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1s"><a href="#" class="fs"><i
+                            class="fab fa-twitter"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1.2s"><a href="#" class="fs"><i
+                            class="fab fa-facebook"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1.4s"><a href="#" class="fs"><i
+                            class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- === Logo ===  -->
         <div class="logo-box">
-            <a href="index.html">
-                go<span class="color-main">.</span>arch
-            </a>
-            <div class="brand-name">go.arch</div>
+            <a href="index.html" class="logo wow animated pulse" data-wow-delay="3s">
+            ویلا<span class="color-main">.</span>فردا
+        </a>
+            <div class="brand-name">VILLA</div>
         </div>
-        <div class="vertical-panel-content d-flex flex-column-reverse icon-panel-order">
-            <ul>
-                <li class="mb-5"><a href="#" class="fs"><i class="fab fa-instagram"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-twitter"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-facebook"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-youtube"></i></a></li>
-            </ul>
-        </div>
+
+    </header>
+    <div class="header-blog about-container">
         <div class="container text-right">
             <div class="title-header">
                 <h1 class="">blog </h1>
             </div>
         </div>
-
-    </header>
-    <main>
+    </div>
+    <main id="mt-100vh">
         <section class="position-relative z-100">
             <div class="container">
                 <article class="blog_item mb-7">
@@ -185,14 +201,18 @@
             <a href="index.html" class="text-decoration-none">
                 <h3 class="m-0">go<span class="color-main">.</span>arch</h3>
             </a>
-            <small>by FARDA collection</small>
+            <small>by Go collection</small>
             <small>© go.arch 2016. All Rights Reserved.</small>
         </div>
     </footer>
 
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/form-validation.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/app.js"></script>
 
 </html>

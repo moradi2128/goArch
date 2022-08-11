@@ -1,77 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa-IR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstraprtl.min.css"> -->
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/b663cf784f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 
-    <title>GO.ARCH</title>
+    <title>ویلا فردا</title>
 </head>
 
 <body>
     <div class="line-main">
-        <div class="container p-0 m-0 row m-auto h-100">
-            <div class="col-4">
+        <div class="container line-container m-0 row m-auto h-100">
+            <div class="col-4 line">
+            </div>
+            <div class="col-4 line-right">
                 <div class="line"></div>
             </div>
-            <div class="col-4">
-                <div class="line"></div>
-            </div>
-
-            <div class="col-4">
-                <div class="line"></div>
-                <div class="line line-right"></div>
+            <div class="col-4 line-right">
             </div>
         </div>
     </div>
-    <header class="d-flex flex-column position-relative z-100">
-        <a class="carousel-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span> PREV</a>
-        <a class="carousel-next" href="#carouselExampleIndicators" role="button" data-slide="next">NEXT
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span></a>
+    <!-- === Header === -->
+    <header class="d-flex flex-column position-relative ">
+
+        <!-- === Nav === -->
+        <nav class="navbar navbar-expand-lg position-relative z-100 p-0">
+            <div class="container container-sm-meno navbar-container">
+                <button class="nav-buttom-res navbar-toggler float-right" data-target="#nav" data-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="index.html" class="logo logo-glass animated pulse" data-wow-delay="3s">
+                    ویلا<span class="color-main">.</span>فردا
+                </a>
+                <div class="navbar-collapse collapse" id="nav">
+                    <ul class="navbar-nav bg-lg-dark" dir="rtl">
+                        <li class="fs-12 nav-item"><a href="index.html" class="nav-link d-block text-white action action-res">صفحه نخست</a></li>
+                        <li class="fs-12 nav-item"><a href="project-details.html" class="nav-link text-white">اجاره
+                                ویلا</a></li>
+                        <li class="fs-12 nav-item"><a href="about.html" class="nav-link d-block text-white">درباره
+                                ما</a></li>
+                        <li class="fs-12 nav-item"><a href="blog.html" class="nav-link d-block text-white">وبلاگ</a>
+                        </li>
+                        <li class="fs-12 nav-item "><a href="contact.html" class="nav-link d-block text-white">تماس با
+                                ما</a></li>
+                    </ul>
+                </div>
+                <div class="header-phone d-none d-lg-block"><a href="tell:09381416784">09381416784</a></div>
+            </div>
+        </nav>
+        <!-- === Social Media === -->
+        <div class="line-dark">
+            <div class="vertical-panel-content d-flex flex-column-reverse ">
+                <ul>
+                    <li class="mb-5 wow animated fadeInLeft" data-wow-delay=".8s"><a href="#" class="fs"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1s"><a href="#" class="fs"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1.2s"><a href="#" class="fs"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1.4s"><a href="#" class="fs"><i
+                                class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- === Logo ===  -->
+        <div class="logo-box">
+            <a href="index.html" class="logo wow animated pulse" data-wow-delay="3s">
+                ویلا<span class="color-main">.</span>فردا
+            </a>
+            <div class=" text-center mt-5">
+                <small class="ml-5 text-muted">/ 03</small>
+            </div>
+            <div class="brand-name">VILLA</div>
+        </div>
+
+    </header>
+    <!-- === carousel === -->
+    <div class="position-absolute h-100vh carousel-container">
+        <div class="carousel-icon-arrow">
+            <a class="carousel-prev d-flex align-items-center" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-next d-flex align-items-center" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
         <div id="carouselExampleIndicators" class="carousel slide position-relative" data-ride="carousel">
             <div class="img-slider">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="img/slider/slide1.jpg" class="d-block w-100 h-100vh" alt="...">
-                        <div class="carousel-caption">
-                            <h2>concerct hall in new york</h2>
-                            <p class="lead">Concert Hall is the architecture of a new generation, a building that exists
-                                not only in the dimension of space, but also in the dimension of time and communication.
+                        <div class="carousel-caption" dir="rtl">
+                            <h2>ویلا در شهریار</h2>
+                            <p class="lead">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                                ایجاد کرد.
                             </p>
-                            <a href="#" class="shadow-lg btn-pill">LOOk MORE <img src="img/img-icon/next.png"
-                                    class="img-icon-main" alt=""></a>
+                            <a href="#" class="shadow-lg btn-pill wow swing" data-wow-delay="3s">مشاهده بیشتر <img
+                                    src="img/img-icon/next.png" class="img-icon-main" alt=""></a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/slider/slide2.jpg" class="d-block w-100 h-100vh" alt="...">
-                        <div class="carousel-caption ">
-                            <h2>concerct hall in London</h2>
-                            <p class="lead">Concert Hall is the architecture of a new generation, a building that exists
-                                not only in the dimension of space, but also in the dimension of time and communication.
+                        <div class="carousel-caption" dir="rtl">
+                            <h2>ویلا در کرج</h2>
+                            <p class="lead">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                                ایجاد کرد.
                             </p>
-                            <a href="#" class="shadow-lg btn-pill">LOOk MORE <img src="img/img-icon/next.png"
-                                    class="img-icon-main" alt=""></a>
+                            <a href="#" class="shadow-lg btn-pill wow swing" data-wow-delay="3s">مشاهده بیشتر <img
+                                    src="img/img-icon/next.png" class="img-icon-main" alt=""></a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="img/slider/slide3.jpg" class="d-block w-100 h-100vh" alt="...">
-                        <div class="carousel-caption ">
-                            <h2>concerct hall in Paris</h2>
-                            <p class="lead">Concert Hall is the architecture of a new generation, a building that exists
-                                not only in the dimension of space, but also in the dimension of time and communication.
+                        <div class="carousel-caption" dir="rtl">
+                            <h2>ویلا در ملارد</h2>
+                            <p class="lead">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+                                ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                                ایجاد کرد.
                             </p>
-                            <a href="#" class="shadow-lg btn-pill">LOOk MORE <img src="img/img-icon/next.png"
-                                    class="img-icon-main" alt=""></a>
+                            <a href="#" class="shadow-lg btn-pill wow swing" data-wow-delay="3s">مشاهده بیشتر <img
+                                    src="img/img-icon/next.png" class="img-icon-main" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -88,89 +146,45 @@
                 </li>
             </ol>
         </div>
-        <div class="header-phone d-none d-sm-block">+7 (212) 674-25-10</div>
-        <nav class="navbar navbar-expand-lg position-relative z-100 p-0">
-            <div class="container container-sm-meno">
-                <button class="nav-buttom-res navbar-toggler float-right" data-target="#nav" data-toggle="collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="nav">
-                    <ul class="navbar-nav bg-lg-dark">
-                        <li class="fs-12 nav-item"><a href="index.html"
-                                class="nav-link d-block text-white action action-res">HOME</a></li>
-                        <li class="fs-12 nav-item"><a href="about.html" class="nav-link d-block text-white">ABOUT US</a>
-                        </li>
-                        <li class="fs-12 nav-item"><a href="project-details.html"
-                                class="nav-link text-white">PROJECTS</a></li>
-                        <li class="fs-12 nav-item"><a href="blog.html" class="nav-link d-block text-white">BLOG</a></li>
-                        <li class="fs-12 nav-item mr-3"><a href="contact.html"
-                                class="nav-link d-block text-white">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="line-dark"></div>
-        <div class="logo-box">
-            <a href="index.html">
-                go<span class="color-main">.</span>arch
-            </a>
-            <div class=" text-center mt-5">
-                <small class="ml-5 text-muted">/ 03</small>
-            </div>
-            <div class="brand-name">Arch </div>
-        </div>
-        <div class="vertical-panel-content d-flex flex-column-reverse ">
-            <ul>
-                <li class="mb-5"><a href="#" class="fs"><i class="fab fa-instagram"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-twitter"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-facebook"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-youtube"></i></a></li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <section
-            class="about d-flex flex-column justify-content-between justify-content-xl-around position-relative px-sm-3 px-lg-0 container z-100 ">
-            <div class="brand-name brand-about">about</div>
+    </div>
+    <!-- === Main === -->
+    <main id="section-index">
+        <section class="about d-flex flex-column justify-content-between justify-content-xl-around position-relative px-sm-3 px-lg-0 container z-100 ">
+            <div class="brand-name brand-about ">about</div>
             <div>
-                <h2 class="title-section text-center mt-7 mb-5 fs-title">about <span class="color-main">Go.Arch</span>
+                <h2 class=" text-center mt-7 mb-5 fs-title">درباره <span class="color-main">ویلا فردا</span>
                 </h2>
             </div>
-            <div class="row m-0 justify-content-between">
-                <div class="col-lg-4 col-md-6 col-sm-12 p-0 pl-lg-4">
-                    <h3 class="mb-5">we turn ideas into works of art.</h3>
-                    <p class="lead">
-                        For each project we establish relationships with partners who we know will help us create added
-                        value for your project. As well as bringing together the public and private sectors, we make
-                        sector-overarching links to gather knowledge and to learn from
-                        each other. The way we undertake projects is based on permanently applying values that reinforce
-                        each other: socio-cultural value, experiental value, building-technical value and economical
-                        value
+            <div class="row m-0 justify-content-between dir-r">
+                <div class="col-lg-4 col-md-6 col-sm-12  pr-0 ">
+                    <h3 class="mb-5 mt-0">لورم ایپسوم متن ساختگی با تولید سادگی نامفهموم</h3>
+                    <p class="lead dir-r">
+                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                        کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-5 col-sm-12 p-0 p-lg-4">
-                    <h3 class="mb-5 mt-lg-0">our specialization <span class="color-main">:</span></h3>
-                    <div class="mb-5"><img src="img/img-icon/icon-architecture.png" class="img-icon mb-3"
-                            alt="architecture">
-                        <h4>architecture</h4>
+                <div class="col-lg-4 col-md-5 col-sm-12 p-0 pl-lg-4 dir-r">
+                    <h3 class="mb-5 mt-lg-0">لورم ایپسوم متن <span class="color-main">:</span></h3>
+                    <div class="mb-5"><img src="img/img-icon/icon-architecture.png" class="img-icon mb-3" alt="architecture">
+                        <h4>متن تست</h4>
                     </div>
                     <div class="mb-5"><img src="img/img-icon/icon-interiors.png" class="img-icon mb-3" alt="interiors">
-                        <h4>interiors</h4>
+                        <h4>متن تست</h4>
                     </div>
                     <div><img src="img/img-icon/icon-planing.png" class="img-icon mb-3" alt="planing">
-                        <h4>planing</h4>
+                        <h4>متن تست</h4>
                     </div>
                 </div>
-                <div class="img-about col-lg-4 col-md-6 col-sm-12 text-center m-0 p-0 px-lg-4">
+                <div class="img-about col-lg-4 col-md-6 col-sm-12 text-center m-0 p-0">
                     <img src="img/380x370.jpg" class="w-100" alt="">
                 </div>
             </div>
 
         </section>
-        <section class="projects p-0 m-0 position-relative overflow-hidden">
-            <div class="p-0 my-5">
+        <section class="projects p-0 mt-12rem position-relative overflow-hidden ">
+            <!-- <div class="p-0 my-5">
                 <h2 class="text-center fs-title">our <span class="color-main">projects</span></h2>
-            </div>
+            </div> -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <a href="/" class="card-project swiper-slide position-relative overflow-hidden">
@@ -178,8 +192,8 @@
                         <img src="img/projects/1-480x880.jpg" class="img-card " alt="">
                         <img src="img/img-icon/zoom.png" class="img-zoom " alt="zoom">
                         <div class="position-absolute top">
-                            <h3 class="mt-0">Residential care project in Paris</h3>
-                            <h4 class="text-rotate">architecture</h4>
+                            <h3 class="mt-0">ویلا در شهریار</h3>
+                            <h4 class="text-rotate">villafarda</h4>
                         </div>
                     </a>
                     <a href="/" class="card-project swiper-slide position-relative overflow-hidden">
@@ -187,8 +201,8 @@
                         <img src="img/projects/2-480x880.jpg" class="img-card" alt="">
                         <img src="img/img-icon/zoom.png" class="img-zoom" alt="zoom">
                         <div class="position-absolute top">
-                            <h3 class="mt-0">Residential care project in Paris</h3>
-                            <h4 class="text-rotate">architecture</h4>
+                            <h3 class="mt-0">ویلا در ملارد</h3>
+                            <h4 class="text-rotate">villafarda</h4>
                         </div>
                     </a>
                     <a href="/" class="card-project swiper-slide position-relative overflow-hidden">
@@ -196,8 +210,8 @@
                         <img src="img/projects/3-480x880.jpg" class="img-card" alt="">
                         <img src="img/img-icon/zoom.png" class="img-zoom" alt="zoom">
                         <div class="position-absolute top">
-                            <h3 class="mt-0">Residential care project in Paris</h3>
-                            <h4 class="text-rotate">architecture</h4>
+                            <h3 class="mt-0">ویلا در کردان</h3>
+                            <h4 class="text-rotate">villafarda</h4>
                         </div>
                     </a>
                     <a href="/" class="card-project swiper-slide position-relative overflow-hidden">
@@ -205,8 +219,8 @@
                         <img src="img/projects/4-480x880.jpg" class="img-card" alt="">
                         <img src="img/img-icon/zoom.png" class="img-zoom" alt="zoom">
                         <div class="position-absolute top">
-                            <h3 class="mt-0">Residential care project in Paris</h3>
-                            <h4 class="text-rotate">architecture</h4>
+                            <h3 class="mt-0">ویلا در چالوس</h3>
+                            <h4 class="text-rotate">villafarda</h4>
                         </div>
                     </a>
                 </div>
@@ -214,19 +228,16 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </section>
-        <section
-            class="year-brand container p-0 m-0 position-relative d-flex flex-column justify-content-around h-85 z-100">
+        <section class="year-brand container p-0 m-0 position-relative d-flex flex-column justify-content-around h-85 z-100">
             <div class="container text-center position-absolute p-0">
                 <div class="bg-market">
-                    <h3 class="year-market">12</h3>
+                    <h3 class="year-market">10</h3>
                 </div>
-                <h2 class="color-main h2-cilents m-0 wow animated fadeInRight" data-wow-delay="0.3s">years of successful
-                    work <span class="text-white">in the market</span></h2>
+                <h2 class="color-main h2-cilents m-0 dir-r wow animated fadeInRight" data-wow-delay="0.3s">سابقه خدمات رسانی <span class="text-white">در زمینه املاک و مستغلات</span></h2>
             </div>
 
         </section>
-        <section
-            class="cilents container p-0 m-0 position-relative d-flex flex-column justify-content-around overflow-hidden">
+        <!-- <section class="cilents container p-0 m-0 position-relative d-flex flex-column justify-content-around overflow-hidden">
             <div class="container h-100 d-flex flex-column justify-content-around text-center p-0">
                 <div>
                     <h2 class="text-center m-0 fs-title">our <span class="color-main">cilents</span></h2>
@@ -235,44 +246,34 @@
                 <div class="section-content mb-7">
                     <ul class="clients-list">
                         <li class="client">
-                            <a href=""><img alt=""
-                                    src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/1.png"></a>
+                            <a href=""><img alt="" src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/1.png"></a>
                         </li>
                         <li class="client">
-                            <a href=""><img alt=""
-                                    src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/2.png"></a>
+                            <a href=""><img alt="" src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/2.png"></a>
                         </li>
                         <li class="client">
-                            <a href=""><img alt=""
-                                    src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/1.png"></a>
+                            <a href=""><img alt="" src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/1.png"></a>
                         </li>
                         <li class="client">
-                            <a href=""><img alt=""
-                                    src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/2.png"></a>
+                            <a href=""><img alt="" src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/2.png"></a>
                         </li>
                         <li class="client">
-                            <a href=""><img alt=""
-                                    src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/1.png"></a>
+                            <a href=""><img alt="" src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/1.png"></a>
                         </li>
                         <li class="client">
-                            <a href=""><img alt=""
-                                    src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/2.png"></a>
+                            <a href=""><img alt="" src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/2.png"></a>
                         </li>
                         <li class="client">
-                            <a href=""><img alt=""
-                                    src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/1.png"></a>
+                            <a href=""><img alt="" src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/1.png"></a>
                         </li>
                         <li class="client">
-                            <a href=""><img alt=""
-                                    src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/2.png"></a>
+                            <a href=""><img alt="" src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/2.png"></a>
                         </li>
                         <li class="client">
-                            <a href=""><img alt=""
-                                    src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/1.png"></a>
+                            <a href=""><img alt="" src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/1.png"></a>
                         </li>
                         <li class="client">
-                            <a href=""><img alt=""
-                                    src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/2.png"></a>
+                            <a href=""><img alt="" src="http://paul-themes.com/wp/go-arch/go-arch-dark/wp-content/uploads/2011/05/2.png"></a>
                         </li>
                     </ul>
                 </div>
@@ -280,82 +281,78 @@
                     <a href="#" class="shadow-lg btn-pill">LOOk MORE <img src="img/img-icon/next.png"
                             class="img-icon-main" alt=""></a>
                 </div>
-        </section>
-        <section
-            class="contact position-relative d-flex flex-column justify-content-around h-lg-85 z-100 overflow-hidden">
-            <div class="container d-flex flex-column justify-content-around w-100 h-100 align-items-center pad-0">
-                <div>
-                    <h2 class="py-6">get <span class="color-main">in touch</span></h2>
+        </section> -->
+        <!-- === Contact === -->
+        <section class="contact position-relative d-flex flex-column justify-content-around h-lg-85 z-100 overflow-hidden">
+            <div class="container d-flex flex-column justify-content-around w-100 h-100 align-items-center px-0">
+                <div class="mb-5">
+                    <h2 class="py-6">ارتباط <span class="color-main">با ما</span></h2>
                     <div class="brand-name brand-contact">contact</div>
                 </div>
-                <div class="contact-box d-flex w-100 flex-lg-row gap-09">
-                    <div class="contact-number d-flex flex-column col-lg-4 p-0 mb-5">
-                        <a href="tell://0000000" class="text-white mb-3">+1 (212) 674-25-10</a>
-                        <a href="tell://0000000" class="text-white mb-3">+1 (212) 287-85-22</a>
-                        <a href="mailto://vllafarda@yahoo.com" class="text-white mb-3">info@goarch.com</a>
-                        <label for="">USA.New York Quigley Bridge</label>
+                <div class="contact-box d-flex w-100 flex-lg-row">
+                    <div class="contact-number d-flex flex-column align-items-md-baseline col-md-4 px-0">
+                        <a href="tell://0000000" class="text-white mb-3 ">+98 9381416784</a>
+                        <a href="tell://0000000" class="text-white mb-3">+98 9381416784</a>
+                        <a href="mailto://villafardaejareh@yahoo.com" class="text-white mb-3">villaFardaEjareh@gmail.com</a>
                     </div>
                     <form class="js-ajax-form " novalidate="novalidate">
                         <div class="row-field row">
                             <div class="col-field col-sm-6 col-md-4">
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-style" name="name" placeholder="Name">
+                                    <input type="text" class="form-control form-style" name="name" placeholder="نام">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-style" name="email" required=""
-                                        placeholder="Email address *">
+                                    <input type="email" class="form-control form-style" name="email" required="" placeholder="ایمیل *">
                                 </div>
                             </div>
                             <div class="col-field col-sm-6 col-md-4">
                                 <div class="form-group">
-                                    <input type="tel" class="form-control form-style" name="phone" placeholder="Phone ">
+                                    <input type="tel" class="form-control form-style" name="phone" placeholder="شماره تماس ">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-style" name="company"
-                                        placeholder=" Company ">
+                                    <input type="text" class="form-control form-style" name="company" placeholder="استان محل سکونت">
                                 </div>
                             </div>
                             <div class="col-field col-sm-12 col-md-4">
                                 <div class="h-100 form-group">
-                                    <textarea name="message" class="form-style h-100"
-                                        placeholder=" Message*"></textarea>
+                                    <textarea name="message" class="form-style h-100" placeholder=" پیام *"></textarea>
                                 </div>
                             </div>
-                            <div class="col-message col-field col-sm-12">
-                                <div class="form-group">
-                                    <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you!.
-                                        Your message is successfully sent...</div>
-                                    <div class="error-message">We're sorry, but something went wrong</div>
+                            <div class="col-message col-field col-sm-12 mt-3">
+                                <div class="form-group ">
+                                    <div class="success-message dir-r text-right">پیام شما با موفقیت ارسال شد<i class="fa fa-check text-primary"></i></div>
+                                    <div class="error-message dir-r text-right">خطا در ارسال پیام</div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-submit text-right">
-                            <button type="submit" class="btn btn-shadow-2 btn-pill wow swing"
-                                style="visibility: visible; animation-name: swing;">Send <i
+                            <button type="submit" class="btn btn-shadow-2 btn-pill wow swing" data-wow-delay=".3s" style="visibility: visible; animation-name: swing;">ارسال <i
                                     class="icon-next"></i></button>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
+        <div class="backToTop ">
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
     </main>
-    <footer class="container position-relative align-items-center z-100">
+    <!-- === Footer === -->
+    <footer class="container position-relative align-items-center z-100 px-0">
         <div class="footer d-flex justify-content-between align-items-center h-100">
+            <small>by FARDA collection</small>
+            <small class="py-3">تمام حقوق برای ویلا فردا محفوظ است</small>
             <a href="index.html" class="text-decoration-none my-3 ">
-                <h3 class="m-0">go<span class="color-main">.</span>arch</h3>
+                <h3 class="m-0">ویلا<span class="color-main">.</span>فردا</h3>
             </a>
-            <small>by Go collection</small>
-            <small class="py-3">© Go.Arch 2021. All Rights Reserved.</small>
         </div>
     </footer>
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/form-validation.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/smooth-scroll.min.js"></script>
-<script src="js/popper.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/app.js"></script>
 

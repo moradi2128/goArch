@@ -14,55 +14,71 @@
 
 <body class="position-relative">
     <div class="line-main">
-        <div class="container p-0 m-0 row m-auto h-100">
-            <div class="col-4">
+        <div class="container line-container p-0 m-0 row m-auto h-100">
+            <div class="col-4 line">
+            </div>
+            <div class="col-4 line-right">
                 <div class="line"></div>
             </div>
-            <div class="col-4">
-                <div class="line"></div>
-            </div>
-
-            <div class="col-4">
-                <div class="line"></div>
-                <div class="line line-right"></div>
+            <div class="col-4 line-right">
             </div>
         </div>
     </div>
-    <header class="header header-project-details position-relative">
-        <div class="header-phone d-none d-sm-block">+7 (212) 674-25-10</div>
+
+    <!-- === Header === -->
+    <header class="d-flex flex-column position-relative ">
+
+        <!-- === Nav === -->
         <nav class="navbar navbar-expand-lg position-relative z-100 p-0">
-            <div class="container container-sm-meno">
+            <div class="container container-sm-meno navbar-container">
                 <button class="nav-buttom-res navbar-toggler float-right" data-target="#nav" data-toggle="collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <a href="index.html" class="logo logo-glass animated pulse" data-wow-delay="3s">
+                ویلا<span class="color-main">.</span>فردا
+            </a>
                 <div class="navbar-collapse collapse" id="nav">
-                    <ul class="navbar-nav bg-lg-dark">
-                        <li class="fs-12 nav-item"><a href="index.html" class="nav-link text-white">HOME</a></li>
-                        <li class="fs-12 nav-item"><a href="about.html" class="nav-link text-white">ABOUT US</a></li>
-                        <li class="fs-12 nav-item"><a href="project-details.html"
-                                class="nav-link text-white  action action-res">PROJECTS</a></li>
-                        <li class="fs-12 nav-item"><a href="blog.html" class="nav-link text-white">BLOG</a></li>
-                        <li class="fs-12 nav-item mr-3"><a href="contact.html" class="nav-link text-white">CONTACT</a>
+                    <ul class="navbar-nav bg-lg-dark" dir="rtl">
+                        <li class="fs-12 nav-item"><a href="index.html" class="nav-link d-block text-white action action-res">صفحه نخست</a></li>
+                        <li class="fs-12 nav-item"><a href="project-details.html" class="nav-link text-white">اجاره
+                            ویلا</a></li>
+                        <li class="fs-12 nav-item"><a href="about.html" class="nav-link d-block text-white">درباره
+                            ما</a></li>
+                        <li class="fs-12 nav-item"><a href="blog.html" class="nav-link d-block text-white">وبلاگ</a>
                         </li>
+                        <li class="fs-12 nav-item "><a href="contact.html" class="nav-link d-block text-white">تماس با
+                            ما</a></li>
                     </ul>
                 </div>
+                <div class="header-phone d-none d-lg-block"><a href="tell:09381416784">09381416784</a></div>
             </div>
         </nav>
+        <!-- === Social Media === -->
+        <div class="line-dark">
+            <div class="vertical-panel-content d-flex flex-column-reverse ">
+                <ul>
+                    <li class="mb-5 wow animated fadeInLeft" data-wow-delay=".8s"><a href="#" class="fs"><i
+                            class="fab fa-instagram"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1s"><a href="#" class="fs"><i
+                            class="fab fa-twitter"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1.2s"><a href="#" class="fs"><i
+                            class="fab fa-facebook"></i></a></li>
+                    <li class="mb-5 fs wow animated fadeInLeft" data-wow-delay="1.4s"><a href="#" class="fs"><i
+                            class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- === Logo ===  -->
         <div class="logo-box">
-            <a href="index.html">
-                go<span class="color-main">.</span>arch
-            </a>
-            <div class="brand-name">farda</div>
+            <a href="index.html" class="logo wow animated pulse" data-wow-delay="3s">
+            ویلا<span class="color-main">.</span>فردا
+        </a>
+            <div class="brand-name">VILLA</div>
         </div>
-        <div class="vertical-panel-content d-flex flex-column-reverse icon-panel-order">
-            <ul>
-                <li class="mb-5"><a href="#" class="fs"><i class="fab fa-instagram"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-twitter"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-facebook"></i></a></li>
-                <li class="mb-5 fs"><a href="#" class="fs"><i class="fab fa-youtube"></i></a></li>
-            </ul>
-        </div>
-        <div class="container text-right">
+
+    </header>
+    <div class="about-container header-project-details ">
+        <div class=" container text-right">
             <div class="title-header">
                 <h1 class="mt-7 mt-lg-0">PROJECT IN PARIS </h1>
                 <div class="project-title-info">
@@ -74,20 +90,16 @@
                 <p></p>
             </div>
         </div>
-
-    </header>
-    <main>
+    </div>
+    <main id="mt-100vh">
         <section class="position-relative z-100 overflow-hidden">
             <div class="container w-project mb-md-9">
                 <div class="project-details-item">
                     <div class="row">
-                        <div class="project-details-info wow fadeInLeft"
-                            style="visibility: visible; animation-name: fadeInLeft;">
+                        <div class="project-details-info wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
                             <h3 class="project-details-title">
                                 Project description<br> is here #1 </h3>
-                            <p class="project-details-descr"> It is a good idea to think of your PC as an office. It
-                                stores files, programs, pictures. This can be compared to an actual office’s files,
-                                machines and decorations. The operating system is the boss. With this image in mind,
+                            <p class="project-details-descr"> It is a good idea to think of your PC as an office. It stores files, programs, pictures. This can be compared to an actual office’s files, machines and decorations. The operating system is the boss. With this image in mind,
                                 think of an office you’ve visited that was slow and inefficient. </p>
                         </div>
                         <div class="project-details-img col-md-8 col-md-offset-4">
@@ -99,13 +111,10 @@
             <div class="container w-project mb-md-9">
                 <div class="project-details-item">
                     <div class="row">
-                        <div class="project-details-info wow fadeInLeft project-details-box-center"
-                            style="visibility: visible; animation-name: fadeInLeft;">
+                        <div class="project-details-info wow fadeInLeft project-details-box-center" style="visibility: visible; animation-name: fadeInLeft;">
                             <h3 class="project-details-title">
                                 Project description<br> is here #2 </h3>
-                            <p class="project-details-descr"> It is a good idea to think of your PC as an office. It
-                                stores files, programs, pictures. This can be compared to an actual office’s files,
-                                machines and decorations. The operating system is the boss. With this image in mind,
+                            <p class="project-details-descr"> It is a good idea to think of your PC as an office. It stores files, programs, pictures. This can be compared to an actual office’s files, machines and decorations. The operating system is the boss. With this image in mind,
                                 think of an office you’ve visited that was slow and inefficient. </p>
                         </div>
                         <div class="project-details-img col-md-8">
@@ -117,13 +126,10 @@
             <div class="container w-project mb-md-9">
                 <div class="project-details-item">
                     <div class="row">
-                        <div class="project-details-info wow fadeInLeft"
-                            style="visibility: visible; animation-name: fadeInLeft;">
+                        <div class="project-details-info wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
                             <h3 class="project-details-title">
                                 Project description<br> is here #3 </h3>
-                            <p class="project-details-descr"> It is a good idea to think of your PC as an office. It
-                                stores files, programs, pictures. This can be compared to an actual office’s files,
-                                machines and decorations. The operating system is the boss. With this image in mind,
+                            <p class="project-details-descr"> It is a good idea to think of your PC as an office. It stores files, programs, pictures. This can be compared to an actual office’s files, machines and decorations. The operating system is the boss. With this image in mind,
                                 think of an office you’ve visited that was slow and inefficient. </p>
                         </div>
                         <div class="project-details-img col-md-8 col-md-offset-4">
@@ -146,7 +152,11 @@
 
 </body>
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/form-validation.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/app.js"></script>
 
 </html>
