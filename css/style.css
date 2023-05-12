@@ -10,6 +10,24 @@
 @import url("navigation.css");
 @import url("media.css");
 
+/*  === Font-Face ===*/
+
+/* @font-face {
+  font-family: Vazir;
+  src: url("../fonts/vazir/Vazir.eot");
+  src: url("../fonts/vazir/Vazir.woff") format("woff"),
+    url("../fonts/vazir/Vazir.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+} */
+@font-face {
+  font-family: Shabnam;
+  src: url("../fonts/shabnam/Shabnam.eot");
+  src: url("../fonts/shabnam/Shabnam.woff") format("woff"),
+    url("../fonts/shabnam/Shabnam.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 /*  */
 
 html {
@@ -18,7 +36,7 @@ html {
 }
 
 body {
-  font-family: "Vazir", sans-serif !important;
+  font-family: "Shabnam", sans-serif !important;
   font-size: 1em;
   line-height: 1.65;
   color: rgba(255, 255, 255, 0.6);
@@ -108,17 +126,6 @@ body {
   transform: rotate(180deg);
 }
 
-/*  === Font-Face ===*/
-
-@font-face {
-  font-family: Vazir;
-  src: url("../fonts/vazir/Vazir.eot");
-  src: url("../fonts/vazir/Vazir.woff") format("woff"),
-    url("../fonts/vazir/Vazir.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* @font-face {
   font-family: iranianSans;
   src: url('../fonts/iranian-sans.eot');
@@ -131,7 +138,12 @@ body {
 } */
 
 /* Utilities */
-
+.dBlock {
+  display: block !important;
+}
+.dNone{
+  display: none !important;
+}
 #mt-100vh {
   margin-top: 100vh;
 }
@@ -487,7 +499,7 @@ header {
 .logo-glass {
   display: block;
   margin: 1rem;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .menu-container {
@@ -784,13 +796,12 @@ header {
 }
 
 /* === Products Page === */
-.product-card-details{
+.product-card-details {
   position: absolute;
   bottom: 0;
   right: 0;
   padding: 2rem;
 }
-
 
 /*  === project section ===*/
 

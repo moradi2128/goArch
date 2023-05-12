@@ -75,7 +75,7 @@
             </ul>
           </div>
           <div class="header-phone d-none d-lg-block">
-            <a href="tell:09381416784">09381416784</a>
+            <a href="tell:09123456789">09123456789</a>
           </div>
         </div>
       </nav>
@@ -193,7 +193,7 @@
               </p>
             </div>
             <div
-              class="col-lg-4 col-md-12 col-sm-12 py-0 wow animated fadeInUp dir-r pl-lg-0 px-md-0 mb-4 "
+              class="col-lg-4 col-md-12 col-sm-12 py-0 wow animated fadeInUp dir-r pl-lg-0 px-md-0 mb-4"
               data-wow-delay="1.3s"
             >
               <img
@@ -220,53 +220,60 @@
         class="contact position-relative d-flex flex-column justify-content-around h-lg-85 z-100 overflow-hidden"
       >
         <div
-          class="container d-flex flex-column justify-content-around w-100 h-100 align-items-center pad-0"
+          class="container d-flex flex-column justify-content-around w-100 h-100 align-items-center p-0"
         >
-          <div>
-            <h2 class="py-6">get <span class="color-main">in touch</span></h2>
+          <div class="mb-5">
+            <h2 class="py-6">ارتباط <span class="color-main">با ما</span></h2>
             <div class="brand-name brand-contact">contact</div>
           </div>
-          <div class="contact-box d-flex w-100 flex-lg-row gap-09">
-            <div class="contact-number d-flex flex-column col-lg-4 p-0 mb-5">
+          <div class="contact-box d-flex w-100 flex-lg-row">
+            <div
+              class="contact-number d-flex flex-column align-items-md-baseline col-md-4 px-0"
+            >
               <a href="tell://0000000" class="text-white mb-3"
-                >+1 (212) 674-25-10</a
+                >+98 9123456789</a
               >
               <a href="tell://0000000" class="text-white mb-3"
-                >+1 (212) 287-85-22</a
+                >+98 9123456789</a
               >
-              <a href="mailto://vllafarda@yahoo.com" class="text-white mb-3"
-                >info@goarch.com</a
+              <a href="mailto://mroadi2565@gmail.com" class="text-white mb-3"
+                >mroadi2565@gmail.com</a
               >
-              <label for="">USA.New York Quigley Bridge</label>
             </div>
-            <form class="js-ajax-form" novalidate="novalidate">
+            <form id="form" class="js-ajax-form w-100" novalidate="novalidate">
               <div class="row-field row">
-                <div class="col-field col-sm-6 col-md-4">
+                <div class="col-field col-sm-6 col-lg-4 pr-lg-0">
                   <div class="form-group">
                     <input
                       type="text"
                       class="form-control form-style"
                       name="name"
-                      placeholder="Name"
+                      id="name"
+                      placeholder="* نام و نام خانوادگی"
                     />
+                    <div class="error-message-inputName dir-r text-right"></div>
                   </div>
                   <div class="form-group">
                     <input
                       type="email"
                       class="form-control form-style"
                       name="email"
+                      id="email"
                       required=""
-                      placeholder="Email address *"
+                      placeholder="ایمیل *"
                     />
+                    <div
+                      class="error-message-inputEmail dir-r text-right"
+                    ></div>
                   </div>
                 </div>
-                <div class="col-field col-sm-6 col-md-4">
+                <div class="col-field col-sm-6 col-lg-4">
                   <div class="form-group">
                     <input
                       type="tel"
                       class="form-control form-style"
                       name="phone"
-                      placeholder="Phone "
+                      placeholder="شماره تماس "
                     />
                   </div>
                   <div class="form-group">
@@ -274,38 +281,39 @@
                       type="text"
                       class="form-control form-style"
                       name="company"
-                      placeholder=" Company "
+                      placeholder="محل سکونت"
                     />
                   </div>
                 </div>
-                <div class="col-field col-sm-12 col-md-4">
+                <div class="col-field col-sm-12 col-lg-4 pl-lg-0">
                   <div class="h-100 form-group">
                     <textarea
                       name="message"
-                      class="form-style h-100"
-                      placeholder=" Message*"
+                      class="form-style"
+                      id="message"
+                      placeholder=" پیام *"
                     ></textarea>
+                    <div
+                      class="error-message-inputMessage dir-r text-right"
+                    ></div>
                   </div>
                 </div>
-                <div class="col-message col-field col-sm-12">
-                  <div class="form-group">
-                    <div class="success-message">
-                      <i class="fa fa-check text-primary"></i> Thank you!. Your
-                      message is successfully sent...
-                    </div>
-                    <div class="error-message">
-                      We're sorry, but something went wrong
-                    </div>
+                <div class="col-message col-field col-sm-12 mt-3">
+                  <div class="form-status form-group">
+                    <!-- <div class="error-message dir-r text-right">
+                    خطا در ارسال پیام
+                  </div>  -->
                   </div>
                 </div>
               </div>
-              <div class="form-submit text-right">
+              <div class="form-submit text-right mt-2">
                 <button
                   type="submit"
                   class="btn btn-shadow-2 btn-pill wow swing"
-                  style="visibility: visible; animation-name: swing"
+                  data-wow-delay=".3s"
                 >
-                  Send <i class="icon-next"></i>
+                  ارسال
+                  <i class="fa fa-arrow-right ml-2"></i>
                 </button>
               </div>
             </form>
@@ -313,15 +321,19 @@
         </div>
       </section>
     </main>
-    <footer class="container position-relative align-items-center z-100">
+    <div class="backToTop">
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+    <!-- === Footer === -->
+    <footer class="container position-relative align-items-center z-100 p-0">
       <div
         class="footer d-flex justify-content-between align-items-center h-100"
       >
+        <small>by FARDA collection</small>
+        <small class="py-3">تمام حقوق برای ویلا فردا محفوظ است</small>
         <a href="index.html" class="text-decoration-none my-3">
-          <h3 class="m-0">go<span class="color-main">.</span>arch</h3>
+          <h3 class="m-0">ویلا<span class="color-main">.</span>فردا</h3>
         </a>
-        <small>by Go collection</small>
-        <small class="py-3">© Go.Arch 2021. All Rights Reserved.</small>
       </div>
     </footer>
   </body>
