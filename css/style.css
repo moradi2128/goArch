@@ -138,13 +138,13 @@ body {
 } */
 
 /* Utilities */
-.overflow-x-hidden{
+.overflow-x-hidden {
   overflow-x: hidden !important;
 }
 .dBlock {
   display: block !important;
 }
-.dNone{
+.dNone {
   display: none !important;
 }
 #mt-100vh {
@@ -454,7 +454,7 @@ header {
 
 .logo {
   display: inline-block;
-  font-family:Shanam ,montserrat, sans-serif;
+  /* font-family: Shanam, montserrat, sans-serif; */
   font-weight: 700;
   font-size: 4vmin;
   line-height: 1;
