@@ -138,6 +138,9 @@ body {
 } */
 
 /* Utilities */
+.overflow-x-hidden{
+  overflow-x: hidden !important;
+}
 .dBlock {
   display: block !important;
 }
@@ -499,7 +502,7 @@ header {
 .logo-glass {
   display: block;
   margin: 1rem;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .menu-container {
@@ -588,7 +591,7 @@ header {
   z-index: 10;
   color: #fff;
   left: 47vmin;
-  top: 5.5vmin;
+  top: 5.2vmin;
 }
 
 .header-phone a {
